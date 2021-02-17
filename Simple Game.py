@@ -25,9 +25,8 @@ circle_color = (143, 122, 59)
 #Coin Color
 
 coin_color = (233, 131, 229)
-line_color = (51, 116, 48)
-circle_color = (143, 122, 59)
- 
+coin_pos = (600, 400)
+coin_radius = 10
 
 coin_collission = pygame.rect(coin_pos[0] - coin_radius, coin_pos[1] - coin_radius, coin_radius * 2, coin_radius * 2 )
 
