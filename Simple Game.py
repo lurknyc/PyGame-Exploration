@@ -3,13 +3,14 @@ import random
 import sys
  
 
-
+#initalize pygame
 pygame.init()
 
+#make canvas size
 size = width, height = 640, 480
 
 screen = pygame.display.set_mode(size)
-
+#set clock in relation to FPS
 clock = pygame.time.Clock()
 
 shape_position = (width / 2, height / 2)
@@ -27,7 +28,7 @@ circle_color = (143, 122, 59)
 coin_color = (233, 131, 229)
 coin_pos = (600, 400)
 coin_radius = 10
-
+# Calculate the hitbox of coins. 
 coin_collission = pygame.rect(coin_pos[0] - coin_radius, coin_pos[1] - coin_radius, coin_radius * 2, coin_radius * 2 )
 
 coin_collected = False
@@ -38,3 +39,4 @@ circle_radius = 25
 #Start Colliossion Box
 
 player_collission = pygame.rect(circle_pos[0] - circle_radius, circle_pos[1] - circle_radius, circle_radius * 2, circle_radius * 2)
+
